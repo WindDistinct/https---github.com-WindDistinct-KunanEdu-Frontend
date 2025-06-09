@@ -1,0 +1,21 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+.input-form {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  display: block;
+}
+
+.grid2 {
+    justify-content: center;
+    display: flex;
+    grid-column: span 2;
+}
