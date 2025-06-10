@@ -91,7 +91,7 @@ export default function FormularioAula({ onExito, initialData }) {
         estado: true,
       });
     } catch (err) {
-      setError("Error al guardar. Verifique que el número de aula no esté duplicado: " + err);
+      setError("Error al guardar. Verifique que el número de aula no esté duplicado");
     }
   };
 

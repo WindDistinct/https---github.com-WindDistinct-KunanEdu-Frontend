@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { alumnoService } from "../../api/requestApi";
 import "../../styles/Botones.css";

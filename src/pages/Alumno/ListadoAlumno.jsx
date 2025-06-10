@@ -43,7 +43,7 @@ export default function ListadoAlumno() {
 		try {
 			await alumnoService.eliminar(id);
 			setMensaje({ tipo: "success", texto: "Alumno eliminado correctamente" });
-			await cargarAlumnos();
+			await alumnoService.crear();
 		} catch (error) {
 			setMensaje({ tipo: "error", texto: "Error al eliminar el alumno" });
 		}

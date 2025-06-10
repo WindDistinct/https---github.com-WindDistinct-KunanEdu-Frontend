@@ -50,7 +50,13 @@ export default function ListadoSeccion() {
   };
 
   const handleEditar = (seccion) => {
-    setFormData(seccion);
+    const formateado = {
+      ...seccion,
+      aula: seccion.id_aula,
+      grado: seccion.id_grado,
+      periodo: seccion.id_periodo,
+    };
+    setFormData(formateado);
     setMostrarFormulario(true);
   };
 

@@ -29,7 +29,7 @@ export default function ListadoEmpleado() {
         .sort((a, b) => a.id_emp - b.id_emp);
       setEmpleados(empleadosFormateados);
     } catch (error) {
-      setMensaje({ tipo: "error", texto: error + ": Error al cargar los empleados" });
+      setMensaje({ tipo: "error", texto: "Error al cargar los empleados" });
     }
   }, [rol]);
 

@@ -108,7 +108,6 @@ export default function ListadoCurso() {
       <Tabla
         columnas={[
           { key: "nombre_curso", label: "Nombre del Curso" },
-          { key: "docente", label: "Docente Id" },
           ...(puedeAdministrar ? [{ key: "estado", label: "Estado" }] : []),
         ]}
         datos={cursos}
